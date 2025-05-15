@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    background-color: gray;
+}
+.icon{
+    display: none;
+}
+nav {
+   
+    background-color: gray;
+}
+nav li {
+    display: inline-block;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+nav li a:hover {
+    background-color: orange;
+    color: black;
+}
+.drop-menu{
+    position: absolute;
+    display: none;
+
+}
+.drop-menu a {
+    display: block;
+    color: black;
+}
+.drop:hover .drop-menu{
+    display: block;
+}
+@media screen and (max-width:768px ) {
+    nav {
+        display: none;
+    }
+    .icon {
+        display: block;
+        cursor: pointer;
+    }
+}
