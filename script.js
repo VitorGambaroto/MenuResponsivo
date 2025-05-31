@@ -6,3 +6,4 @@ function clickdown() {
         clicou.style.display = 'block'
     }
 }
+

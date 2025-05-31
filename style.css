@@ -4,29 +4,35 @@
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
+body{
+    background-color:rgb(0, 0, 0);
+}
 header {
     text-align: center;
-    background-color: gray;
+    background-color: rgb(65, 64, 64);
 }
 .icon{
-    display: none;
+    display:block;
+    cursor: pointer;
 }
 nav {
-   
-    background-color: gray;
+    display: none;
+    background-color: rgb(65,64,64);
 }
 nav li {
-    display: inline-block;
+    display:inline-block;
 }
 nav li a {
-    color: white;
+    color: rgb(248, 19, 3);
     text-decoration: none;
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
+    border-radius: 5px;
 }
 nav li a:hover {
-    background-color: orange;
-    color: black;
+    background-color: rgb(248, 3, 3);
+    color: rgb(255, 255, 255);
+
 }
 .drop-menu{
     position: absolute;
@@ -35,17 +41,15 @@ nav li a:hover {
 }
 .drop-menu a {
     display: block;
-    color: black;
 }
 .drop:hover .drop-menu{
     display: block;
 }
-@media screen and (max-width:768px ) {
+@media screen and (min-width:768px ) {
     nav {
-        display: none;
+        display:block;
     }
     .icon {
-        display: block;
-        cursor: pointer;
+        display: none;
     }
 }
